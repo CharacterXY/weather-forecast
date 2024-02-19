@@ -1,17 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather Forecast</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Weather Forecast App</h1>
-
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil eos
-      maiores porro consequatur, architecto quis ratione sunt eaque provident
-      error?
-    </p>
-    <h2>Lorem ipsum dolor sit amet.</h2>
+    <div class="container py-5">
+      <div class="card mx-auto" style="width: 18rem">
+        <img
+          src="dan.jpg"
+          class="card-img-top"
+          alt="Weather Image"
+          id="weatherImage"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">Current Weather</h5>
+          <p class="card-text">
+            <strong>Wind Speed:</strong> <span id="windSpeed">10 km/h</span>
+          </p>
+          <p class="card-text">
+            <strong>Humidity:</strong> <span id="humidity">85%</span>
+          </p>
+          <p class="card-text">
+            <strong>Temperature:</strong> <span id="temperature">22°C</span>
+          </p>
+        </div>
+        <div class="card-footer text-muted text-center">
+          <span id="location">Location Name</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
